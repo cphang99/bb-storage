@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: run gofmt
-      run: test -z "$(gofmt -d . | tee /dev/tty)"
+      run: test -z "$(gofmt -d . | tee /dev/stderr)"
   buildifier:
     runs-on: ubuntu-latest
     container: docker://golang:1.13
