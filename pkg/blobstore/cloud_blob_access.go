@@ -15,7 +15,7 @@ import (
 )
 
 type cloudBlobAccess struct {
-	bucket      *blob.Bucket
+	bucket *blob.Bucket
 	keyPrefix   string
 	storageType StorageType
 }
